@@ -1,0 +1,51 @@
+.dropdown {
+    display:block;
+    grid-template-columns: repeat(1, auto); /* Adjust the number of columns as needed */
+    grid-gap: 5px; /* Adjust the gap between checkboxes */
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .table tr:hover {
+    background-color: #ddd;
+  }
+.photo {
+    width: 250px;
+}
+.toggle-container {
+    display: grid;
+    grid-template-columns: repeat(8, auto); /* Adjust the number of columns as needed */
+    grid-gap: 5px; /* Adjust the gap between checkboxes */
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 1px;
+    width: 100%; /* Set the width to 40% */
+    margin-left: 0; /* Set margin-left to 0 */
+    margin-right: auto; /* Set margin-right to auto */
+    overflow:auto;
+}
+
+.toggle-label {
+    display: flex;
+    align-items: center;
+}
+  
