@@ -13,12 +13,8 @@ function App() {
   useEffect(() => {//Import and sort data
     const url = 'https://restcountries.com/v3.1/all';
     axios.get(url).then((response) => {
-      setCountries(response.data);
-      setCountries(countries?.sort(function (a,b){//Sort countries
-        if(a.name.common<b.name.common){return -1;}
-        if(a.name.common>b.name.common){return 1;}
-        return 0;
-      })); //In case of a loading problem remove this setCountries then save, put it back, and save again
+      const sortedCountries = [...response.data].sort((a,b) => a.name.common.localeCompare(b.name.common));
+      setCountries(sortedCountries);
     });
   }, []);
 
