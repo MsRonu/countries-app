@@ -11,7 +11,7 @@ function App() {
   const [selected,setSelected] = useState<Countries|null>();
 
   useEffect(() => {//Import and sort data
-    const url = 'https://restcountries.com/v3.1/all?fields=name,capital,region,maps,population,area,languages,currencies,flags,cca3';
+    const url = 'https://restcountries.com/v3.1/all?fields=name,capital,coatOfArms,maps,population,area,languages,currencies,flags,cca3';
     axios.get(url).then((response) => {
       const sortedCountries = [...response.data].sort((a,b) => a.name.common.localeCompare(b.name.common));
       setCountries(sortedCountries);
