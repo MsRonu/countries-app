@@ -73,14 +73,9 @@ const TableWithTogglesAndValues: React.FC<Props> = ({ country }) => {
         }
     };
     const keyOrder: (keyof Countries)[] = [
-        "name", "altSpellings", "flags", "coatOfArms", "capital", "currencies",
-        "population", "languages", "area", "maps", "landlocked", "latlng",
-        "continents", "independent", "timezones", "borders", "unMember",
-        "startOfWeek", "region", "subregion", "cca2", "cca3", "ccn3", "cioc",
-        "fifa", "flag", "idd", "tld", "status", "capitalInfo", "car",
-        "demonyms", "postalCode", "translations"
+        "name","flags","capital","coatOfArms","currencies","languages","population","area","cca3","maps"
     ]; //Display order
-
+//"name", "altSpellings", "flags", "coatOfArms", "capital", "currencies","population", "languages", "area", "maps", "landlocked", "latlng","continents", "independent", "timezones", "borders", "unMember","startOfWeek", "region", "subregion", "cca2", "cca3", "ccn3", "cioc","fifa", "flag", "idd", "tld", "status", "capitalInfo", "car","demonyms", "postalCode", "translations"
     return (
         <div>
             <div className="toggle-container">
